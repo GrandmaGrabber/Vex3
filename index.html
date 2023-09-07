@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
 
-    <title>Vex 4 Unblocked - ubg235 GameDistribution</title>
+    <title>Vex 3 Unblocked - ubg235 GameDistribution</title>
 
     <link rel="icon" type="image/png" href="assets/icon.png">
     <!-- For apple devices -->
@@ -19,6 +19,12 @@
 
 
 
+
+
+
+
+    <script src="patch/js/azerion-libs-m.js" defer></script>
+
 </head>
 
 <body style="overflow:hidden;">
@@ -27,29 +33,10 @@
     <div id="orientation"></div>
 
     <script type="text/javascript">
-        var _azerionIntegration = {
-            "gdId": "762c932b4db74c6da0c1d101b2da8be6",
-            "advType": "gd",
-            "rtgEnabled": true,
-            "lbEnabled": false,
-            "fbType": "dummy",
-            "alxType": "std",
-            "af": false,
-            "sa": false,
-            "la": false,
-            "bd": 0,
-            "playBtn": true,
-            "cp": false
-        }
+        var gameName = "vex3.min.js";
 
 
-        var libs = [];
-
-
-        var gameName = "vex4.min.js";
-
-
-        var enableAnalytics, azAdWrapper, _azFeedback;
+        var azAdWrapper, _azFeedback;
 
 
 
@@ -69,7 +56,7 @@
 
         addScript('version.js', Date.now(), function() {
 
-            addScript(gameName, version, function() {});
+            addScript(gameName, Date.now(), function() {});
 
         });
     </script>
